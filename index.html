@@ -29,10 +29,14 @@
             <input type="text" name="username" id="username"/>
             <label for="password">Password:</label>
             <input type="password" name="password" id="password"/>
-            <input type="radio" name="gender" value="male"/>Male<br/>
-            <input type="radio" name="gender" value="female"/>Female<br/>
-            <input type="radio" name="gender" value="other"/>Other
-            <input list="Options"/>
+            <label for="radio-animalspirit-pikachu">Pikachu</label>
+            <input id="radio-animalspirit-pikachu" type="radio" name="animalspirit" value="pikachu"/>
+            <label for="radio-animalspirit-bulbasaur">Bulbasaur</label>
+            <input id="radio-animalspirit-bulbasaur" type="radio" name="animalspirit" value="bulbasaur"/>
+            <label for="radio-animalspirit-other">Other</label>
+            <input id="radio-animalspirit-other" type="radio" name="animalspirit" value="other"/>
+            <label for="other-animalspirit-options">Other options</label>
+            <input id="other-animalspirit-options" list="Options"/>
             <datalist id="Options">
                 <option value="Option1"></option>
                 <option value="Option2"></option>
@@ -40,8 +44,8 @@
             </datalist>
 
             <input type="submit" value="Submit"/>
-            <input type="color"/>
-            <input type="checkbox" name="correct" value="correct"/>Correct
+            <label for="color">Color</label>
+            <input id="color" type="color"/>
         </form>
     </section>
 </main>
