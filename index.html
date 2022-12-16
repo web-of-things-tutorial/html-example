@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <h1>MyStore</h1>
+    <p>Buy what you want!</p>
+    <nav>
+        <a href="#prod-list">Product List</a>
+        <a href="#register">Register</a>
+    </nav>
+</header>
+<main>
+    <section id="prod-list">
+        <h2>Product list</h2>
+        <ul>
+            <li><p>School set. <a href="detail.html">See detail</a>.</p></li>
+            <li><p>Our Divine Double</p></li>
+        </ul>
+    </section>
+
+    <section id="register">
+        <h2>Register</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username"/>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"/>
+            <input type="radio" name="gender" value="male"/>Male<br/>
+            <input type="radio" name="gender" value="female"/>Female<br/>
+            <input type="radio" name="gender" value="other"/>Other
+            <input list="Options"/>
+            <datalist id="Options">
+                <option value="Option1"></option>
+                <option value="Option2"></option>
+                <option value="Option3"></option>
+            </datalist>
+
+            <input type="submit" value="Submit"/>
+            <input type="color"/>
+            <input type="checkbox" name="correct" value="correct"/>Correct
+        </form>
+    </section>
+
+    <aside>
+        <h2>Comments</h2>
+        <ul>
+            <li><p>This page has two sections (<code>&lt;section&gt;</code>): <strong>product list</strong> and <strong>register</strong>.
+            </p></li>
+            <li><p>Section product list contains a header (<code>&lt;h2&gt;</code>) and an unordered list
+                (<code>&lt;ul&gt;</code>) with list items (<code>&lt;li&gt;</code>).</p></li>
+            <li><p>Section register contains a header (<code>&lt;h2&gt;</code>) and a form (<code>&lt;form&gt;</code>)
+                with
+                several inputs (<code>&lt;input&gt;</code>). Notice that each input <code>&lt;type&gt;</code> behaves
+                differently.</p></li>
+            <li><p><code>&lt;input&gt;</code>s must always be inside <code>&lt;form&gt;</code>s.</p></li>
+            <li><p>The <code>&lt;header&gt;</code> of the page contains a navigation element (<code>&lt;nav&gt;</code>)
+                with
+                several anchors (<code>&lt;a&gt;</code>) that reference internal <code>&lt;id&gt;</code>s.</p></li>
+            <li><p>Semantic tags like <code>&lt;section&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;header&gt;</code>,
+                <code>&lt;nav&gt;</code> (and so on) are useful to enable machines to read the page and better
+                accessibility. See <a
+                        href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements">semantic
+                    HTML5 elements at MDN</a>.</p></li>
+        </ul>
+    </aside>
+</main>
+</body>
+</html>
